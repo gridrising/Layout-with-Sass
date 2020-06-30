@@ -1,0 +1,29 @@
+@import "./abstracts/variables";
+@import "./components/card";
+@import "./base/reset";
+body {
+  background-color: #ccc;
+}
+*,
+*:after,
+*:before {
+  font-family: sans-serif;
+}
+.main-title {
+  font-size: 3rem;
+  margin: 20px;
+  font-weight: lighter;
+  text-align: center;
+  color: $text-color;
+}
+.main-container {
+  margin: 0 auto;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+hr {
+  width: 80%;
+  margin: 30px;
+}

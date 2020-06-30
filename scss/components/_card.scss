@@ -1,0 +1,45 @@
+@import "./card-items/header";
+@import "./card-items/price-block";
+@import "./card-items/features";
+@import "./card-items/toggle";
+.plan-card {
+  border-radius: 5px;
+  width: 32%;
+  border-radius: 5px;
+  background-color: #fff;
+  li {
+    list-style-type: none;
+    margin-bottom: 10px;
+  }
+  li:before {
+    content: "✓  "; /* Добавляем в качестве маркера символ */
+    color: #1faee9;
+  }
+}
+.basic-plan-color {
+  background-color: $basic-color;
+}
+.brand-plan-color {
+  background-color: $brand-color;
+}
+.enterprise-plan-color {
+  background-color: $enterprise-color;
+}
+.basic-plan {
+  hr {
+    border: 1px $basic-color solid;
+  }
+  .buy {
+    margin-top: 23px;
+  }
+}
+.brand-plan {
+  hr {
+    border: 1px $brand-color solid;
+  }
+}
+.enterprise-plan {
+  hr {
+    border: 1px $enterprise-color solid;
+  }
+}
