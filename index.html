@@ -2,38 +2,60 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Messy - The Private Podcasting Solution for Companies</title>
   </head>
   <body>
-    <header>
-      <div class="header-container">
-        <div class="logo">
-          <img
-            src="https://www.messy.fm/static/media/logo_messy_v1.27aaffcc.svg"
-            alt="Logo"
-            width="160"
-          />
-        </div>
-        <div class="nav">
-          <a class="nav-element" href="#">About</a>
-          <a class="nav-element" href="#">Pricing</a>
-          <a class="nav-element" href="#">Book a Demo</a>
-          <a class="nav-element" href="#">Sign In</a>
-        </div>
-      </div>
-    </header>
     <main>
       <h1 class="main-title">A Plan For Every Messy Podcaster</h1>
       <div class="main-container">
-        <div class="packages">
-          <div class="pro-package">Pro</div>
-          <div class="enterprise-package">Enterprise</div>
-          <div class="custom-package">Custom</div>
+        <div class="plan-card">
+          <div class="plan-header basic-plan">
+            <h2 class="plan-header-title">The Basic Plan</h2>
+          </div>
+          <div class="plan-info">
+            <h2 class="price-title">Always Free</h2>
+            <div class="buy">
+              <input
+                class="buy-button basic-plan"
+                value="Get Started"
+                type="button"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="plan-card">
+          <div class="plan-header brand-plan">
+            <h2 class="plan-header-title">The Brand Plan</h2>
+          </div>
+          <div class="plan-info">
+            <h2 class="price-title">$9/month</h2>
+            <div class="buy">
+              <input
+                class="buy-button brand-plan"
+                value="Add to Cart"
+                type="button"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="plan-card">
+          <div class="plan-header enterprise-plan">
+            <h2 class="plan-header-title">The Enterprise Plan</h2>
+          </div>
+          <div class="plan-info">
+            <h2 class="price-title">$39/month</h2>
+            <div class="buy">
+              <input
+                class="buy-button enterprise-plan"
+                value="Add to Cart"
+                type="button"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </main>
-    <footer></footer>
   </body>
 </html>

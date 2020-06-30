@@ -1,0 +1,22 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-transpile": "npx node-sass -w scss/ -o css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Keracy/flexbox-layout.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Keracy/flexbox-layout/issues"
+  },
+  "homepage": "https://github.com/Keracy/flexbox-layout#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
