@@ -2,6 +2,10 @@
 @import "./card-items/price-block";
 @import "./card-items/features";
 @import "./card-items/toggle";
+hr {
+  width: 80%;
+  margin: 30px;
+}
 .plan-card {
   border-radius: 5px;
   width: 32%;
