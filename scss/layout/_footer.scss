@@ -1,0 +1,10 @@
+@import "../utils/variables";
+
+.footer{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    height: 364px;
+    margin-top: 50px;
+    background-color: $dark;
+}

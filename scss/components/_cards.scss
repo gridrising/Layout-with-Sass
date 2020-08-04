@@ -1,0 +1,130 @@
+@import "../utils/variables";
+
+.main__cards{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    @media screen and (max-width:1200px){
+        flex-direction: column;
+    }
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    .wrapper-for-scalling{
+        display: flex;
+        @media screen and (max-width:1200px){
+            justify-content: center;
+        }
+        @media screen and (max-width:800px){
+            flex-direction: column;
+        }
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 4px;
+        margin: 10px;
+        width: 400px;
+        height: 750px;
+        .card-name{
+            width: 100%;
+            height:62px;
+            background-color:$dark;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: $my_white;
+            &--blue{
+                background-color:$light_blue;
+            }
+            &--pink{
+                background-color:palevioletred;
+            }
+            &--purple{
+                background-color:blueviolet;
+            }
+        }
+        .card-price{
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            font-size: 32px;
+            color:$dark_grey;
+            margin: 35px 0;
+        }
+        .card-action-button{
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: $my_white;
+            width:160px;
+            height: 40px;
+            background-color:$dark;
+            border: 0;
+            border-radius: 3px;
+            &--blue{
+                background-color:$light_blue;
+            }
+            &--pink{
+                background-color:palevioletred;
+            }
+            &--purple{
+                background-color:blueviolet;
+            }
+        }
+        .card-line{
+            display: block;
+            width: 300px;
+            border: 1px solid $dark;
+            border-radius: 2px;
+            margin: 40px 0;
+            &--blue{
+                border: 1px solid $light_blue;
+            }
+            &--pink{
+                border: 1px solid palevioletred;
+            }
+            &--purple{
+                border: 1px solid blueviolet;
+            }
+        }
+        .card-props{
+            display: flex;
+            justify-content: center;
+            height: 300px;
+            width: 80%;
+            &__list{
+                font-family: Roboto, Arial, Helvetica, sans-serif;
+                color:$dark_grey;
+                &__item{
+                    margin:10px 0;
+                }
+            }
+        }
+        .card-sub-period{
+            display: flex;
+            margin: 20px 0;
+            &__button{
+                font-family: Roboto, Arial, Helvetica, sans-serif;
+                color:$dark_grey;
+                display: inline;
+                padding: 8px;
+                border-radius:10px;
+                &--active{
+                    background-color:$light_blue;
+                    border:2px solid $light_blue;
+                }
+                &--unactive{
+                    background-color:white;
+                    border: 0;
+                }
+            }
+        }
+        .list-item-check-mark{
+            width: 10px;
+            height: 10px;
+        }
+    }
+}
