@@ -1,0 +1,19 @@
+.card-sub-period{
+    display: flex;
+    margin: 20px 0;
+    &__button{
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+        color:$dark_grey;
+        display: inline;
+        padding: 8px;
+        border-radius:10px;
+        &--active{
+            background-color:$my_blue;
+            border:2px solid $my_blue;
+        }
+        &--unactive{
+            background-color:white;
+            border: 0;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.card-line{
+    display: block;
+    width: 300px;
+    border: 1px solid $dark;
+    border-radius: 2px;
+    margin: 40px 0;
+    &--blue{
+        border: 1px solid $my_blue;
+    }
+    &--pink{
+        border: 1px solid $my_pink;
+    }
+    &--purple{
+        border: 1px solid $my_purple;
+    }
+}

@@ -44,6 +44,31 @@ table {
 *, :after, :before {
   box-sizing: border-box; }
 
+.header-button {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #222b36;
+  transition: border-bottom 0.4s; }
+  .header-button__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px; }
+  .header-button:hover {
+    border-bottom: 2px solid #059bff; }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .logo__image {
+    display: block;
+    width: 140px;
+    margin: 20px; }
+
 .header {
   display: flex;
   justify-content: center;
@@ -55,26 +80,26 @@ table {
   position: fixed;
   background-color: #222b36; }
   .header__content {
-    width: 1000px;
+    width: 1200px;
     display: flex;
-    justify-content: space-between; }
-    .header__content__logo {
-      width: 140px; }
+    justify-content: space-between;
+    background-color: #222b36; }
+    @media screen and (max-width: 690px) {
+      .header__content {
+        height: 130px;
+        flex-direction: column; } }
     .header__content__navigation {
       display: flex;
       justify-content: center;
-      align-items: center; }
-    .header__content__button {
-      padding: 0 20px; }
+      align-items: center;
+      height: 100%; }
   .header .link-text {
     font-family: Roboto, Arial, Helvetica, sans-serif;
     color: #f2f4f9;
     font-size: 16px;
     text-decoration: none;
     margin: 0 16px;
-    padding-bottom: 5px; }
-    .header .link-text:hover {
-      border-bottom: 1px solid aqua; }
+    white-space: pre; }
 
 .main__heading {
   width: 100%;
@@ -89,7 +114,98 @@ table {
     font-size: 3rem;
     font-weight: 400;
     line-height: 56px;
+    text-align: center;
     white-space: pre-line; }
+    @media screen and (max-width: 1200px) {
+      .main__heading .heading-text {
+        font-size: 2rem; } }
+
+.card-name {
+  width: 100%;
+  height: 62px;
+  background-color: #222b36;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #f2f4f9; }
+  .card-name--blue {
+    background-color: #5c8cd7; }
+  .card-name--pink {
+    background-color: #c5a0ef; }
+  .card-name--purple {
+    background-color: #a58dd8; }
+
+.card-line {
+  display: block;
+  width: 300px;
+  border: 1px solid #222b36;
+  border-radius: 2px;
+  margin: 40px 0; }
+  .card-line--blue {
+    border: 1px solid #5c8cd7; }
+  .card-line--pink {
+    border: 1px solid #c5a0ef; }
+  .card-line--purple {
+    border: 1px solid #a58dd8; }
+
+.card-props {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 80%; }
+  .card-props__list {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: #444444; }
+    .card-props__list__item {
+      list-style-image: image(ltr);
+      padding-left: 0;
+      margin: 10px 0;
+      padding-left: 20px;
+      list-style: none;
+      background-image: url("../../../images/check_mark.png");
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 10px; }
+
+.card-price {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  color: #444444;
+  margin: 35px 0; }
+
+.card-action-button {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #f2f4f9;
+  width: 160px;
+  height: 40px;
+  background-color: #222b36;
+  border: 0;
+  border-radius: 3px; }
+  .card-action-button--blue {
+    background-color: #5c8cd7; }
+  .card-action-button--pink {
+    background-color: #c5a0ef; }
+  .card-action-button--purple {
+    background-color: #a58dd8; }
+
+.card-sub-period {
+  display: flex;
+  margin: 20px 0; }
+  .card-sub-period__button {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: #444444;
+    display: inline;
+    padding: 8px;
+    border-radius: 10px; }
+    .card-sub-period__button--active {
+      background-color: #5c8cd7;
+      border: 2px solid #5c8cd7; }
+    .card-sub-period__button--unactive {
+      background-color: white;
+      border: 0; }
 
 .main__cards {
   display: flex;
@@ -119,87 +235,21 @@ table {
     margin: 10px;
     width: 400px;
     height: 750px; }
-    .main__cards__card .card-name {
-      width: 100%;
-      height: 62px;
-      background-color: #222b36;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: Roboto, Arial, Helvetica, sans-serif;
-      font-size: 20px;
-      color: #f2f4f9; }
-      .main__cards__card .card-name--blue {
-        background-color: #658dd2; }
-      .main__cards__card .card-name--pink {
-        background-color: palevioletred; }
-      .main__cards__card .card-name--purple {
-        background-color: blueviolet; }
-    .main__cards__card .card-price {
-      font-family: Roboto, Arial, Helvetica, sans-serif;
-      font-size: 32px;
-      color: #444444;
-      margin: 35px 0; }
-    .main__cards__card .card-action-button {
-      font-family: Roboto, Arial, Helvetica, sans-serif;
-      font-size: 20px;
-      color: #f2f4f9;
-      width: 160px;
-      height: 40px;
-      background-color: #222b36;
-      border: 0;
-      border-radius: 3px; }
-      .main__cards__card .card-action-button--blue {
-        background-color: #658dd2; }
-      .main__cards__card .card-action-button--pink {
-        background-color: palevioletred; }
-      .main__cards__card .card-action-button--purple {
-        background-color: blueviolet; }
-    .main__cards__card .card-line {
-      display: block;
-      width: 300px;
-      border: 1px solid #222b36;
-      border-radius: 2px;
-      margin: 40px 0; }
-      .main__cards__card .card-line--blue {
-        border: 1px solid #658dd2; }
-      .main__cards__card .card-line--pink {
-        border: 1px solid palevioletred; }
-      .main__cards__card .card-line--purple {
-        border: 1px solid blueviolet; }
-    .main__cards__card .card-props {
-      display: flex;
-      justify-content: center;
-      height: 300px;
-      width: 80%; }
-      .main__cards__card .card-props__list {
-        font-family: Roboto, Arial, Helvetica, sans-serif;
-        color: #444444; }
-        .main__cards__card .card-props__list__item {
-          margin: 10px 0; }
-    .main__cards__card .card-sub-period {
-      display: flex;
-      margin: 20px 0; }
-      .main__cards__card .card-sub-period__button {
-        font-family: Roboto, Arial, Helvetica, sans-serif;
-        color: #444444;
-        display: inline;
-        padding: 8px;
-        border-radius: 10px; }
-        .main__cards__card .card-sub-period__button--active {
-          background-color: #658dd2;
-          border: 2px solid #658dd2; }
-        .main__cards__card .card-sub-period__button--unactive {
-          background-color: white;
-          border: 0; }
-    .main__cards__card .list-item-check-mark {
-      width: 10px;
-      height: 10px; }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  justify-content: space-between; }
 
 .main__wrapper {
   width: 100%;
   padding-top: 4rem;
-  display: block; }
+  display: flex;
+  flex-direction: column; }
 
 .footer {
   display: flex;
